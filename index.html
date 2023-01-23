@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Atención especializada en enfermedades digestivas">
+    <title>GastroSinaloa</title>
+    <!-- Favicons -->
+    <link href="images/favicon.png" rel="icon">
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Vendor CSS Files -->
+    <link href="vendor/aos/aos.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+          <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- ======= Navbar Section ======= -->
+    <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <img src="images/logotipo.png" alt="" class="d-inline-block align-middle mr-2 logo-large">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <a href="index.html#nosotros" class="nav-item nav-link">Nosotros</a>
+                <a href="servicios.html" class="nav-item nav-link">Servicios</a>
+                <a href="index.html#cta" class="nav-item nav-link d-block d-sm-block">Alimentación</a>
+                <a href="index.html#ubicacion" class="nav-item nav-link d-block d-sm-block">Ubicación</a>
+            </div>
+            <a href="index.html#contacto" class="btn btn-primary py-2 px-4 d-none d-lg-block d-sm-none">CONTÁCTANOS</a>
+        </div>
+    </nav><!-- Navbar End -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero d-flex align-items-center">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                    <h1 data-aos="fade-up">Brindamos atención médica especializada en enfermedades digestivas.</h1>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/doc-1.png" class="img-fluid animated" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section><!-- End Hero -->
+    <!-- ======= Nosotros Section ======= -->
+    <section id="nosotros" class="nosotros py-5 parallax-1">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h1>Nuestro Equipo</h1>
+                <p class="strong">Gastro Sinaloa somos un grupo de profesionales en la salud digestiva dedicados a la
+                    atención y el cuidado de las enfermedades del tracto gastrointestinal.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row g-0 team-items">
+                <div class="col-lg-4 col-md-6" data-aos="fade-right">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="images/nosotros/dr-1.png" alt="">
+                        </div>
+                        <div class="team-content text-center p-2">
+                            <h3 class="mt-2">Dr. Ricardo Gallardo Cabrera</h3>
+                            <span>Cirujano gastrointestinal</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="team-item position-relative">
+                        <div class="team-img">
+                            <img class="img-fluid" src="images/nosotros/dr-2.png" alt="">
+                        </div>
+                        <div class="team-content text-center p-2">
+                            <h3 class="mt-2">Dr. Efrén Gallardo Angulo</h3>
+                            <span>Gastroenterólogo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-left">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="images/nosotros/dr-3.png" alt="">
+                        </div>
+                        <div class="team-content text-center p-2">
+                            <h3 class="mt-2">Dr. Víctor Gallardo Cabrera</h3>
+                            <span>Gastroenterólogo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row icon-boxes mt-5">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in"
+                    data-aos-delay="200">
+                    <div class="icon-box">
+                        <h4 class="title text-center">MISIÓN</h4>
+                        <p class="description text-center">Brindamos atención médica especializada en enfermedades
+                            digestivas.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in"
+                    data-aos-delay="300">
+                    <div class="icon-box">
+                        <h4 class="title text-center">PROYECTOS</h4>
+                        <p class="description text-center">Para Gastro Sinaloa la innovación es un tema fundamental, por
+                            lo que participamos y dirigimos diversos proyectos de investigación en gastroenterología,
+                            endoscopía y cirugía gastrointestinal.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in"
+                    data-aos-delay="400">
+                    <div class="icon-box">
+                        <h4 class="title text-center">ENFOQUE AL PACIENTE</h4>
+                        <p class="description text-center">Nuestros servicios están dirigidos a personas con
+                            enfermedades gastrointestinales que requieran atención básica o avanzada</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section><!-- Nosotros End -->
+
+    <!-- ======= Certificaciones Section ======= -->
+    <section id="Certificaciones" class="Certificaciones section-bg pt-5 pb-5">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Certificaciones</h2>
+                <p class="strong">Los especialistas de Gastro Sinaloa cuentan con certificación vigente y
+                    certificación médica continua por las siguientes instituciones:
+                </p>
+            </div>
+        </div>
+
+        <div class="container d-none d-md-block">
+
+            <div class="row" data-aos="zoom-in">
+
+                <div class="col d-flex align-items-center justify-content-center">
+                    <a href="https://www.asge.org/">
+                        <div class="circular-container">
+                            <img src="images/Certificaciones/ASGE.png" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col d-flex align-items-center justify-content-center">
+                    <a href="https://www.esge.com/">
+                        <div class="circular-container">
+                            <img src="images/Certificaciones/ESGE.png" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col d-flex align-items-center justify-content-center">
+                    <a href="https://gi.org/">
+                        <div class="circular-container">
+                            <img src="images/Certificaciones/ACG.png" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col d-flex align-items-center justify-content-center">
+                    <a href="https://www.amegendoscopia.org.mx/">
+                        <div class="circular-container">
+                            <img src="images/Certificaciones/AMEG.png" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col d-flex align-items-center justify-content-center">
+                    <a href="https://www.gastro.org.mx/">
+                        <div class="circular-container">
+                            <img src="images/Certificaciones/AMG.png" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="row mt-4" data-aos="zoom-in">
+
+                <div class="col d-flex align-items-center justify-content-center">
+                    <a href="https://cmgastro.org.mx/">
+                        <div class="circular-container">
+                            <img src="images/Certificaciones/CMG.png" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col d-flex align-items-center justify-content-center">
+                    <a href="https://amcg.org.mx/">
+                        <div class="circular-container">
+                            <img src="images/Certificaciones/ACMG.png" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col d-flex align-items-center justify-content-center">
+                    <a href="https://www.cmcgac.org.mx/">
+                        <div class="circular-container">
+                            <img src="images/Certificaciones/CMCA.png" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col d-flex align-items-center justify-content-center">
+                    <a href="https://www.amce.com.mx/">
+                        <div class="circular-container">
+                            <img src="images/Certificaciones/AMCE.png" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col d-flex align-items-center justify-content-center">
+                    <a href="https://cmcoem.info/">
+                        <div class="circular-container">
+                            <img src="images/Certificaciones/CMCOEM.png" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container d-md-none" data-aos="fade-up">
+
+            <div class="certificaciones-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide">
+                        <a href="https://www.asge.org/">
+                            <div class="circular-container">
+                                <img src="images/Certificaciones/ASGE.png" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.esge.com">
+                            <div class="circular-container">
+                                <img src="images/Certificaciones/ESGE.png" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=" https://gi.org/">
+                            <div class="circular-container">
+                                <img src="images/Certificaciones/ACG.png" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.amegendoscopia.org.mx">
+                            <div class="circular-container">
+                                <img src="images/Certificaciones/AMEG.png" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.gastro.org.mx/">
+                            <div class="circular-container">
+                                <img src="images/Certificaciones/AMG.png" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.gastro.org.mx/">
+                            <div class="circular-container">
+                                <img src="images/Certificaciones/AMG.png" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://cmgastro.org.mx/">
+                            <div class="circular-container">
+                                <img src="images/Certificaciones/CMG.png" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://amcg.org.mx/">
+                            <div class="circular-container">
+                                <img src="images/Certificaciones/ACMG.png" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.amce.com.mx/">
+                            <div class="circular-container">
+                                <img src="images/Certificaciones/AMCE.png" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://cmcoem.info">
+                            <div class="circular-container">
+                                <img src="images/Certificaciones/CMCOEM.png" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.cmcgac.org.mx/">
+                            <div class="circular-container">
+                                <img src="images/Certificaciones/CMCA.png" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section><!-- End Cliens Section -->
+    <!-- ======= Alimentacion Section ======= -->
+    <section id="cta" class="cta">
+        <div class="container" data-aos="fade-left" data-aos-easing="ease-in-sine">
+
+            <div class="row g-5">
+
+                <div class="col-lg-7 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first"
+                    data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <h3>CUIDA TU ALIMENTACIÓN</h3>
+                    <p>Descubre y aprende cómo una buena alimentación puede mejorar tu calidad de vida.</p>
+                </div>
+
+            </div>
+        </div>
+    </section><!-- End Alimentacion Section -->
+    <!-- ======= Alimentacion Blog Posts Section ======= -->
+    <section id="recent-blog-posts" class="recent-blog-posts">
+        <div class="container">
+            <div class="row g-5">
+    
+                <div class="col-lg-4 col-sm" data-aos="fade-up" data-aos-delay="200">
+                    <div class="post-box">
+                        <div class="post-img"><img src="images/blog-img-1.png" class="img-fluid" alt=""></div>
+                        <h3 class="post-title">DIETA ANTIRREFLUJO</h3>
+                        <p>Sugerencias para disminuir el reflujo gastroesofágico.</p>
+                        <a href="d_antireflujo.html" class="readmore stretched-link"></a>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-sm" data-aos="fade-up" data-aos-delay="400">
+                    <div class="post-box">
+                        <div class="post-img"><img src="images/blog-img-2.png" class="img-fluid" alt=""></div>
+                        <h3 class="post-title">DIETA RICA EN FIBRA</h3>
+                        <p>La fibra es una sustancia que se encuentra en las plantas. La fibra vegetal, el tipo de que usted come, se encuentra en las frutas, las verduras y los granos.</p>
+                        <a href="d_fibra.html" class="readmore stretched-link"></a>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-sm" data-aos="fade-up" data-aos-delay="600">
+                    <div class="post-box">
+                        <div class="post-img"><img src="images/blog-img-3.png" class="img-fluid" alt=""></div>
+                        <h3 class="post-title">DIETA ANTIGAS</h3>
+                        <p>El tema sobre gases intestinales no es algo sobre lo cual a la gente le guste hablar y existen muchas dudas, mitos y creencias sobre este tema.</p>
+                        <a href="d_antigas.html" class="readmore stretched-link"></a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section><!-- End Alimentacion Blog Posts Section -->
+    <!-- Contacto Start -->
+    <section id="contacto" class="contacto">
+        <div class="container-fluid overflow-hidden my-5 px-lg-0">
+            <div class="container feature px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div class="col-lg-6 feature-text py-5" data-aos="fade-left">
+                        <div class="p-lg-5 ps-lg-0">
+                            <h1 class="display-5 mb-0">Agenda tu cita,</h1>
+                            <h1 class="display-5 mb-5">HOY</h1>
+                            <p class="mb-4 pb-2">Si deseas solicitar una cita médica en nuestras instalaciones, o necesitas
+                                información, debes llenar el siguiente formulario.</p>
+                            <p class="mb-4 pb-2">Es obligatorio llenar los campos marcados con un asterisco <span class="red">(*)</span>
+                                para procesar correctamente tu solicitud.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pe-lg-0 pt-2 pb-5" style="min-height: 600px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute img-fluid w-100 h-100 " src="images/form-bg.png" style="object-fit: cover;" alt="" data-aos="fade-right">
+                            <form name="sentMessage" id="contactForm" class="contact" data-aos="fade-down" data-aos-delay="400">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <label for="nombre">Nombre Completo<span class="red">*</span></label>
+                                            <input type="name" name="nombre" id="name" placeholder="" autocomplete="on" required data-validation-required-message="Por favor ingrese su nombre">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <label for="telefono">Teléfono<span class="red">*</span></label>
+                                            <input type="tel" name="telefono" id="phone" placeholder="" required data-validation-required-message="Por favor ingrese su teléfono.">
+                                            <p class="help-block"></p>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <label for="email">E-mail<span class="red">*</span></label>
+                                            <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="" required="" data-validation-required-message="Por Favor ingrese su correo electronico">
+                                            <p class="help-block"></p>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <label for="detalle">Detalles</label>
+                                            <textarea name="detalle" id="message" placeholder="" data-validation-required-message="Por favor escibra su mensaje"></textarea>
+                                            <p class="help-block"></p>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <button type="submit" id="sendMessageButton" class="main-gradient-button">Enviar</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ubicacion" class="container-fluid" data-aos="zoom-in">
+            <div id="map"></div>
+        </div>
+        <div class="container direcciones mt-5">
+            <div class="row gy-5 gx-lg-5">
+                <div class="col-lg-6" data-aos="zoom-in-up">
+        
+                    <div class="info">
+                        <h3>HOSPITAL ÁNGELES</h3>
+        
+                        <div class="info-item d-flex">
+                            <i class="bi bi-geo-alt flex-shrink-0"></i>
+                            <div>
+                                <h4>ubicación:</h4>
+                                <p>Torre de Especialidades Hospital Ángeles Culiacán. 
+                                    Blvd. Alfonso G. Calderón 2193-A, Desarrollo Urbano Tres Rios.
+                                    </p>
+                            </div>
+                        </div><!-- End Info Item -->
+        
+                        <div class="info-item d-flex">
+                            <i class="bi bi-phone flex-shrink-0"></i>
+                            <div>
+                                <h4>Teléfono:</h4>
+                                <p><a href="tel:6677587900">667 758 7900 (Ext. 5803)</a></p>
+                            </div>
+                        </div><!-- End Info Item -->
+        
+                        <div class="info-item d-flex">
+                            <i class="bi bi-phone flex-shrink-0"></i>
+                            <div>
+                                <h4>Directo:</h4>
+                                <p><a href="tel:6677587945">667 758 7945</a></p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="info-item d-flex">
+                            <i class="bi bi-phone flex-shrink-0"></i>
+                            <div>
+                                <h4>Emergencias:</h4>
+                                <p><a href="tel:6674311387">667 431 1387</a></p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="info-item d-flex">
+                            <i class="bi bi-whatsapp flex-shrink-0"></i>
+                            <div>
+                                <h4>Whatsapp:</h4>
+                                <p><a href="https://api.whatsapp.com/send?phone=526674729463&text=Hola, Nececito mas informacion!" target="_blank">Contactar</a></p>
+                            </div>
+                        </div><!-- End Info Item -->
+        
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="zoom-in-up">
+        
+                    <div class="info">
+                        <h3>UDH</h3>
+        
+                        <div class="info-item d-flex">
+                            <i class="bi bi-geo-alt flex-shrink-0"></i>
+                            <div>
+                                <h4>ubicación:</h4>
+                                <p>Mariano Escobedo 339 Pte.
+                                    Col. Centro C.P. 80000                                    
+                                    </p>
+                            </div>
+                        </div><!-- End Info Item -->
+        
+                        <div class="info-item d-flex">
+                            <i class="bi bi-phone flex-shrink-0"></i>
+                            <div>
+                                <h4>Teléfono:</h4>
+                                <p><a href="tel:6677135600">667 713 5600</a></p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="info-item d-flex">
+                            <i class="bi bi-whatsapp flex-shrink-0"></i>
+                            <div>
+                                <h4>Whatsapp:</h4>
+                                <p><a href="https://api.whatsapp.com/send?phone=526674729463&text=Hola, Nececito mas informacion!" target="_blank">Contactar</a></p>
+                            </div>
+                        </div><!-- End Info Item -->
+        
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature End -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="footer-content">
+          <div class="container">
+            <div class="row align-items-center ali">
+    
+              <div class="col-lg-4 col-md-6">
+                <div class="footer-info">
+                    <img src="images/logotipo.png" alt="" class="d-inline-block align-middle mr-2 logo-large">
+    
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 footer-links">
+                <h4>Links</h4>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <a href="index.html">Inicio</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#nosotros">Nosotros</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#servicios">Servicios</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#alimentacion">Alimentación</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#ubicacion">Ubicación</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 footer-newsletter">
+                <a href="index.html#contacto" class="btn btn-primary mb-3 py-2 px-4">CONTÁCTANOS</a>
+                <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                  </div>
+    
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer-legal text-center">
+          <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+    
+            <div class="d-flex flex-column align-items-center align-items-lg-start">
+              <div class="copyright">
+                &copy; Copyright <strong><span>gastrosinaloa</span></strong>. Todos los derechos reservados
+              </div>
+              <div class="credits">
+                Diseñado por <a href="https://whipple.mx/">whipple</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="vendor/aos/aos.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/php-email-form/validate.js"></script>
+    <!-- Contact Javascript File -->
+    <script src="mail/contact.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
+</body>
+
+</html>

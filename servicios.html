@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Atención especializada en enfermedades digestivas">
+    <title>GastroSinaloa</title>
+    <!-- Favicons -->
+    <link href="images/favicon.png" rel="icon">
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Vendor CSS Files -->
+    <link href="vendor/aos/aos.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+          <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- ======= Navbar Section ======= -->
+    <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <img src="images/logotipo.png" alt="" class="d-inline-block align-middle mr-2 logo-large">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Inicio</a>
+                <a href="index.html#nosotros" class="nav-item nav-link">Nosotros</a>
+                <a href="servicios.html" class="nav-item nav-link active">Servicios</a>
+                <a href="index.html#cta" class="nav-item nav-link d-block d-sm-block">Alimentación</a>
+                <a href="index.html#ubicacion" class="nav-item nav-link d-block d-sm-block">Ubicación</a>
+            </div>
+            <a href="index.html#contacto" class="btn btn-primary py-2 px-4 d-none d-lg-block d-sm-none">CONTÁCTANOS</a>
+        </div>
+    </nav><!-- Navbar End -->
+
+    <!-- ======= Servicios Section ======= -->
+    <section id="servicios" class="servicios section-bg pt-5 pb-5">
+    
+    
+        <div class="container d-none d-md-block">
+    
+            <div class="py-5">
+                <div class="container servicios-info">
+                    <div class="overlay"></div>
+                    <div class="row g-4">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <div class="service-card">
+                                <div class="card-encabezado">
+                                    <p>Endoscopía superior</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Es un procedimiento endoscópico que se realiza a través de la boca para evaluar
+                                        esófago, estómago y duodeno en busca de enfermedades que expliquen los síntomas del
+                                        enfermo.
+                                    </div>
+                                    <div class="info-personal desplazar mt-2">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Permite establecer un diagnóstico preciso de la enfermedad, para así, recibir un
+                                        tratamiento dirigido
+                                    </div>
+                                </div>
+                                <div class="card-acciones d-flex desplazar justify-content-center mt-4">
+                                    <a href="https://google.com" class="btn " target="_blank">Descargue su preparación</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="service-card">
+                                <div class="card-encabezado">
+                                    <p>Colonoscopía</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Es un procedimiento endoscópico que se realiza a través del ano para evaluar el
+                                        recto, colon e íleon terminal en busca de enfermedades que expliquen los síntomas
+                                        del enfermo.
+                                    </div>
+                                    <div class="info-personal desplazar mt-2">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Permite establecer un diagnóstico preciso de la enfermedad, para así, recibir un
+                                        tratamiento dirigido.
+                                    </div>
+                                </div>
+                                <div class="card-acciones d-flex desplazar justify-content-center mt-4">
+                                    <a href="https://google.com" class="btn " target="_blank">Descargue su preparación</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="service-card">
+                                <div class="card-encabezado">
+                                    <p>Enteroscopía de doble balón</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Es un procedimiento endoscópico que se realiza a través de la boca o a través del
+                                        ano para evaluar el intestino delgado y sus diversas enfermedades.
+                                    </div>
+                                    <div class="info-personal desplazar mt-2">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Permite establecer un diagnóstico preciso de la enfermedad mediante toma de
+                                        biopsias, o bien, recibir tratamiento endoscópico preciso.
+                                    </div>
+                                </div>
+                                <div class="card-acciones d-flex desplazar justify-content-center mt-4">
+                                    <a href="https://google.com" class="btn " target="_blank">Descargue su preparación</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="service-card">
+                                <div class="card-encabezado">
+                                    <p>Endoscopía por videocápsula</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Es un procedimiento endoscópico no invasivo que se realiza mediante una cápsula con
+                                        capacidad de fotografiar todo el tracto digestivo en busca de lesiones de la mucosa
+                                        como úlceras, tumores o malformaciones vasculares.
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Permite establecer un diagnóstico preciso de sitios poco accesibles para otros
+                                        métodos endoscópicos.
+                                    </div>
+                                </div>
+                                <div class="card-acciones d-flex desplazar justify-content-center mt-4">
+                                    <a href="https://google.com" class="btn " target="_blank">Descargue su preparación</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="service-card right">
+                                <div class="card-encabezado">
+                                    <p>Colangiografía endoscópica (CPRE)</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Es un procedimiento endoscópico para tratar enfermedades de las vías biliares como
+                                        obstrucción biliar por cálculos o tumores.
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Resolución inmediata del problema obstructivo de las vías biliares.
+                                    </div>
+                                </div>
+                                <div class="card-acciones d-flex desplazar justify-content-center mt-4">
+                                    <a href="https://google.com" class="btn " target="_blank">Descargue su preparación</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="row g-4 mt-5">
+                        <div class="col-md-2">
+                            <div class="service-card">
+                                <div class="card-encabezado">
+                                    <p>Ultrasonido endoscópico</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Es el procedimiento endoscópico más preciso para la estadificación de tumores, toma
+                                        de biopsias de páncreas, hígado, ganglios, así como drenaje de colecciones.
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Permite establecer un diagnóstico de certeza en casos de tumores digestivos.
+                                    </div>
+                                </div>
+                                <div class="card-acciones d-flex desplazar justify-content-center mt-4">
+                                    <a href="https://google.com" class="btn " target="_blank">Descargue su preparación</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="service-card">
+                                <div class="card-encabezado">
+                                    <p>Cirugía gastrointestinal</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        En la cirugía gastrointestinal se tienen en cuenta todas las patologías que
+                                        involucren al esófago, estómago, duodeno, hígado y vías biliares, vesícula biliar,
+                                        páncreas, intestino delgado y grueso.
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                    </div>
+                                </div>
+                                <div class="card-acciones d-flex desplazar justify-content-center mt-4">
+                                    <a href="http://gallardoc.mx" class="btn " target="_blank">Saber más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="service-card">
+                                <div class="card-encabezado">
+                                    <p>Cirugía de hernias</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Consiste en el cierre del defecto herniario mediante la colocación de una malla de
+                                        material perfectamente tolerado por el organismo.
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Elimina molestias y evita que se produzcan complicaciones graves que pueden llevar
+                                        al paciente al servicio de urgencias.
+                                    </div>
+                                </div>
+                                <div class="card-acciones d-flex desplazar justify-content-center mt-4">
+                                    <a href="http://gallardoc.mx" class="btn " target="_blank">Saber más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="service-card">
+                                <div class="card-encabezado">
+                                    <p>Cirugía antirreflujo</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Es un tratamiento para el reflujo de ácido, también conocido
+                                        como ERGE (enfermedad por reflujo gastroesofágico). El cual es
+                                        una condición en la que el alimento o el ácido gástrico se
+                                        devuelve desde el estómago hacia el esófago.
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Mejora la calidad de vida de los pacientes logrando un control
+                                        del reflujo gastroesofágico en pacientes de difícil manejo o
+                                        con hernia hiatal grande.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="service-card">
+                                <div class="card-encabezado">
+                                    <p>Cirugía de vesícula biliar</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Es una cirugía para extirpar la vesícula biliar principalmente por la formación de
+                                        piedras dentro de la misma.
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Elimina las molestias y dolores relacionados con la inflamación de la vesícula a
+                                        consecuencia de las piedras en su interior, con una rápida recuperación para
+                                        reincorporarse a sus actividades diarias.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="service-card right">
+                                <div class="card-encabezado">
+                                    <p>Cirugía gastrointestinal</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        En la cirugía gastrointestinal se tienen en cuenta todas las patologías que
+                                        involucren al esófago, estómago, duodeno, hígado y vías biliares, vesícula biliar,
+                                        páncreas, intestino delgado y grueso.
+                                    </div>
+                                    <div class="info-personal desplazar mt-2">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                    </div>
+                                </div>
+                                <div class="card-acciones d-flex desplazar justify-content-center mt-4">
+                                    <a href="http://gallardoc.mx" class="btn " target="_blank">saber más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div class="container d-md-none" data-aos="fade-up">
+            <div class="certificaciones-slider swiper">
+                <div class="swiper-wrapper align-items-center" style="min-height: 290px;">
+                    <div class="swiper-slide">
+                        <div class="d-flex justify-content-center">
+                            <div class="service-card-small">
+                                <div class="card-encabezado">
+                                    <p>Endoscopía superior</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Es un procedimiento endoscópico que se realiza a través de la boca para evaluar
+                                        esófago, estómago y duodeno en busca de enfermedades que expliquen los síntomas del
+                                        enfermo.
+                                    </div>
+                                    <div class="info-personal desplazar mt-2">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Permite establecer un diagnóstico preciso de la enfermedad, para así, recibir un
+                                        tratamiento dirigido
+                                    </div>
+                                </div>
+                                <div class="card-acciones d-flex justify-content-center mt-4">
+                                    <a href="http://google.com" class="btn " target="_blank">Descargue su preparación</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex justify-content-center">
+                            <div class="service-card-small">
+                                <div class="card-encabezado">
+                                    <p>Colonoscopía</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Es un procedimiento endoscópico que se realiza a través del ano para evaluar el
+                                        recto, colon e íleon terminal en busca de enfermedades que expliquen los síntomas
+                                        del enfermo.
+                                    </div>
+                                    <div class="info-personal desplazar mt-2">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Permite establecer un diagnóstico preciso de la enfermedad, para así, recibir un
+                                        tratamiento dirigido.
+                                    </div>
+                                </div>
+                                <div class="card-acciones d-flex desplazar justify-content-center mt-4">
+                                    <a href="https://google.com" class="btn " target="_blank">Descargue su preparación</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex justify-content-center">
+                            <div class="service-card-small">
+                                <div class="card-encabezado">
+                                    <p>Enteroscopía de doble balón</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Es un procedimiento endoscópico que se realiza a través de la boca o a través del
+                                        ano para evaluar el intestino delgado y sus diversas enfermedades.
+                                    </div>
+                                    <div class="info-personal desplazar mt-2">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Permite establecer un diagnóstico preciso de la enfermedad mediante toma de
+                                        biopsias, o bien, recibir tratamiento endoscópico preciso.
+                                    </div>
+                                </div>
+                                <div class="card-acciones d-flex desplazar justify-content-center mt-4">
+                                    <a href="https://google.com" class="btn " target="_blank">Descargue su preparación</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex justify-content-center">
+                            <div class="service-card-small">
+                                <div class="card-encabezado">
+                                    <p>Endoscopía por videocápsula</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Es un procedimiento endoscópico no invasivo que se realiza mediante una cápsula con
+                                        capacidad de fotografiar todo el tracto digestivo en busca de lesiones de la mucosa
+                                        como úlceras, tumores o malformaciones vasculares.
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Permite establecer un diagnóstico preciso de sitios poco accesibles para otros
+                                        métodos endoscópicos.
+                                    </div>
+                                </div>
+                                <div class="card-acciones d-flex desplazar justify-content-center mt-4">
+                                    <a href="https://google.com" class="btn " target="_blank">Descargue su preparación</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex justify-content-center">
+                            <div class="service-card-small">
+                                <div class="card-encabezado">
+                                    <p>Colangiografía endoscópica (CPRE)</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Es un procedimiento endoscópico para tratar enfermedades de las vías biliares como
+                                        obstrucción biliar por cálculos o tumores.
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Resolución inmediata del problema obstructivo de las vías biliares.
+                                    </div>
+                                </div>
+                                <div class="card-acciones d-flex desplazar justify-content-center mt-4">
+                                    <a href="https://google.com" class="btn " target="_blank">Descargue su preparación</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex justify-content-center">
+                            <div class="service-card-small">
+                                <div class="card-encabezado">
+                                    <p>Ultrasonido endoscópico</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Es el procedimiento endoscópico más preciso para la estadificación de tumores, toma
+                                        de biopsias de páncreas, hígado, ganglios, así como drenaje de colecciones.
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Permite establecer un diagnóstico de certeza en casos de tumores digestivos.
+                                    </div>
+                                </div>
+                                <div class="card-acciones d-flex desplazar justify-content-center mt-4">
+                                    <a href="https://google.com" class="btn " target="_blank">Descargue su preparación</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex justify-content-center">
+                            <div class="service-card-small">
+                                <div class="card-encabezado">
+                                    <p>Cirugía gastrointestinal</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        En la cirugía gastrointestinal se tienen en cuenta todas las patologías que
+                                        involucren al esófago, estómago, duodeno, hígado y vías biliares, vesícula biliar,
+                                        páncreas, intestino delgado y grueso.
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                    </div>
+                                </div>
+                                <div class="card-acciones d-flex desplazar justify-content-center mt-4">
+                                    <a href="http://gallardoc.mx" class="btn " target="_blank">Saber más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex justify-content-center">
+                            <div class="service-card-small">
+                                <div class="card-encabezado">
+                                    <p>Cirugía de hernias</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Consiste en el cierre del defecto herniario mediante la colocación de una malla de
+                                        material perfectamente tolerado por el organismo.
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Elimina molestias y evita que se produzcan complicaciones graves que pueden llevar
+                                        al paciente al servicio de urgencias.
+                                    </div>
+                                </div>
+                                <div class="card-acciones d-flex desplazar justify-content-center mt-4">
+                                    <a href="http://gallardoc.mx" class="btn " target="_blank">Saber más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex justify-content-center">
+                            <div class="service-card">
+                                <div class="card-encabezado">
+                                    <p>Cirugía antirreflujo</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Es un tratamiento para el reflujo de ácido, también conocido
+                                        como ERGE (enfermedad por reflujo gastroesofágico). El cual es
+                                        una condición en la que el alimento o el ácido gástrico se
+                                        devuelve desde el estómago hacia el esófago.
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Mejora la calidad de vida de los pacientes logrando un control
+                                        del reflujo gastroesofágico en pacientes de difícil manejo o
+                                        con hernia hiatal grande.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex justify-content-center">
+                            <div class="service-card-small">
+                                <div class="card-encabezado">
+                                    <p>Cirugía de vesícula biliar</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Es una cirugía para extirpar la vesícula biliar principalmente por la formación de
+                                        piedras dentro de la misma.
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        Elimina las molestias y dolores relacionados con la inflamación de la vesícula a
+                                        consecuencia de las piedras en su interior, con una rápida recuperación para
+                                        reincorporarse a sus actividades diarias.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex justify-content-center">
+                            <div class="service-card-small">
+                                <div class="card-encabezado">
+                                    <p>Cirugía gastrointestinal</p>
+                                </div>
+                                <div class="card-contenido">
+                                    <div class="info-personal desplazar">
+                                        <h5>¿En qué consiste?</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                        En la cirugía gastrointestinal se tienen en cuenta todas las patologías que
+                                        involucren al esófago, estómago, duodeno, hígado y vías biliares, vesícula biliar,
+                                        páncreas, intestino delgado y grueso.
+                                    </div>
+                                    <div class="info-personal desplazar mt-2">
+                                        <h5>Beneficios</h5>
+                                    </div>
+                                    <div class="info-personal desplazar">
+                                    </div>
+                                </div>
+                                <div class="card-acciones d-flex desplazar justify-content-center mt-4">
+                                    <a href="http://gallardoc.mx" class="btn " target="_blank">saber más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section><!-- End Cliens Section -->
+    <!-- ======= Tecnologia Section ======= -->
+    <section id="tecnologia" class="tecnologia">
+        <div class="container-fluid overflow-hidden px-lg-0">
+            <div class="container tecnologia px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div class="col-lg-6 tecnologia-text py-5 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="p-lg-5 ps-lg-0">
+                            <h1 class="mb-4">Técnología</h1>
+                            <p class="mb-4 pb-2">En Gastro Sinaloa contamos con la más
+                                avanzada tecnología disponible en México en
+                                endoscopía digestiva y accesorios para los
+                                procedimientos endoscópicos avanzados.
+                            </p>
+                            <p class="mb-2 pb-2">Gastro Sinaloa tiene la unidad de endoscopía
+                                terapéutica más completa del noroeste de
+                                México.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute img-fluid w-100 h-100" src="images/tecnologia.png"
+                                style="object-fit: cover;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= Prguntas Frecuentes Section ======= -->
+    <section id="servicios-fqa" class="servicios-fqa section-bg">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Preguntas Frecuentes</h2>
+            </div>
+        </div>
+        <div class="container-fluid" data-aos="fade-up">
+    
+            <div class="row">
+    
+                <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+                    <div class="accordion-list">
+                        <div class="custom-accordion" id="accordion_1">
+                            <div class="accordion-item">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">¿Es posible hacer una endoscopia sin sedación?</button>
+                                </h2>
+    
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordion_1">
+                                    <div class="accordion-body">
+                                        En algunos estudios básicos es posible, sin embargo, en Gastro Sinaloa todos los procedimientos (excepto cápsula endoscópica) se realizan bajo sedación ya que esto permite una mejor revisión y evita incomodidades en el paciente.
+                                    </div>
+                                </div>
+                            </div> <!-- .accordion-item -->
+    
+                            <div class="accordion-item">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">¿Qué tipo de anestesia requiere una endoscopia?</button>
+                                </h2>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordion_1">
+                                    <div class="accordion-body">
+                                        Se utiliza sedación moderada mediante medicamentos administrados vía endovenosa.
+                                    </div>
+                                </div>
+                            </div> <!-- .accordion-item -->
+                            <div class="accordion-item">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">¿Cuánto tiempo dura el procedimiento?</button>
+                                </h2>
+    
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion_1">
+                                    <div class="accordion-body">
+                                        Los tiempos varían de acuerdo a la terapéutica empleada en cada uno de ellos pero en general los tiempos
+                                        empleados en los estudios diagnósticos son:
+                                        <ul>
+                                            <li>Endoscopia alta: 8-10 min</li>
+                                            <li>Colonoscopia: 15-20 min</li>
+                                            <li>Enteroscopia de doble balón: 60-120 min</li>
+                                            <li>Colangiografía endoscópica (CPRE): 15-60 min</li>
+                                            <li>Ultrasonido endoscópico: 20-60 min</li>
+                                        </ul>                                
+                                    </div>
+                                </div>
+    
+                            </div> <!-- .accordion-item -->
+    
+    
+                            <div class="accordion-item">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">¿Los estudios endoscópicos son dolorosos?</button>
+                                </h2>
+    
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordion_1">
+                                    <div class="accordion-body">
+                                        No, en la gran mayoría de los casos el paciente despierta sin ninguna molestia.
+
+                                    </div>
+                                </div>
+    
+                            </div> <!-- .accordion-item -->
+
+                            <div class="accordion-item">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">¿Se pueden tomar biopsias por endoscopia?</button>
+                                </h2>
+    
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordion_1">
+                                    <div class="accordion-body">
+                                        Si, ya sea mediante pinza de biopsia, o bien, mediante punción guiada por ultrasonido endoscópico para órganos fuera del tubo digestivo.
+                                    </div>
+                                </div>
+    
+                            </div> <!-- .accordion-item -->
+
+                            <div class="accordion-item">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">¿Cuál es el tiempo de recuperación?</button>
+                                </h2>
+    
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordion_1">
+                                    <div class="accordion-body">
+                                        Generalmente el paciente despierta a los 5-10 minutos después de haber terminado el procedimiento y se siente totalmente recuperado de los medicamentos alrededor de una hora después.
+
+                                    </div>
+                                </div>
+    
+                            </div> <!-- .accordion-item -->
+
+                            <div class="accordion-item">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">¿Qué puedo comer antes del estudio?</button>
+                                </h2>
+    
+                                <div id="collapseSeven" class="collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordion_1">
+                                    <div class="accordion-body">
+                                        Se recomienda un ayuno de 6 a 8 horas previas a cualquier procedimiento endoscópico.
+
+                                    </div>
+                                </div>
+    
+                            </div> <!-- .accordion-item -->
+
+                            <div class="accordion-item">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">¿Puedo regresar a mi trabajo después del estudio?</button>
+                                </h2>
+    
+                                <div id="collapseEight" class="collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordion_1">
+                                    <div class="accordion-body">
+                                        Se recomienda reposo la mañana del procedimiento, dependiendo de la actividad, algunos pacientes pueden regresar a trabajar por la tarde.
+
+                                    </div>
+                                </div>
+    
+                            </div> <!-- .accordion-item -->
+
+                            <div class="accordion-item">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">¿Puedo acudir solo(a) al estudio?</button>
+                                </h2>
+    
+                                <div id="collapseNine" class="collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordion_1">
+                                    <div class="accordion-body">
+                                        Es muy recomendable acudir con algún familiar o acompañante ya que se sugiere no conducir el día del procedimiento.
+
+                                    </div>
+                                </div>
+    
+                            </div> <!-- .accordion-item -->
+
+                            <div class="accordion-item">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">¿Alguno de los medicamentos que tomo interfiere con la endoscopia?</button>
+                                </h2>
+    
+                                <div id="collapseTen" class="collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordion_1">
+                                    <div class="accordion-body">
+                                        No. Para estudios terapéuticos especiales como colangiografía endoscópica (CPRE) ó ultrasonido endoscópico se recomienda suspender anticoagulantes al menos 5 días antes.
+
+                                    </div>
+                                </div>
+    
+                            </div> <!-- .accordion-item -->
+    
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+                    style='background-image: url("images/faq.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+            </div>
+    
+        </div>
+    </section><!-- End Preguntas Frecuentes Section -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="footer-content">
+          <div class="container">
+            <div class="row align-items-center ali">
+    
+              <div class="col-lg-4 col-md-6">
+                <div class="footer-info">
+                    <img src="images/logotipo.png" alt="" class="d-inline-block align-middle mr-2 logo-large">
+    
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 footer-links">
+                <h4>Links</h4>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <a href="index.html">Inicio</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#nosotros">Nosotros</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#servicios">Servicios</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#alimentacion">Alimentación</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#ubicacion">Ubicación</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 footer-newsletter">
+                <a href="index.html#contacto" class="btn btn-primary mb-3 py-2 px-4">CONTÁCTANOS</a>
+                <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                  </div>
+    
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer-legal text-center">
+          <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+    
+            <div class="d-flex flex-column align-items-center align-items-lg-start">
+              <div class="copyright">
+                &copy; Copyright <strong><span>gastrosinaloa</span></strong>. Todos los derechos reservados
+              </div>
+              <div class="credits">
+                Diseñado por <a href="https://whipple.mx/">whipple</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="vendor/aos/aos.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
