@@ -841,6 +841,7 @@ section.nosotros.parallax-1 {
   color: #001970;
   position: relative;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
   
 }
 
@@ -1056,7 +1057,7 @@ section.nosotros.parallax-1 {
   margin-bottom: 0px;
   position: relative;
   border-radius: 0px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 .custom-accordion .accordion-item .btn-link {
   display: block;
@@ -1066,6 +1067,7 @@ section.nosotros.parallax-1 {
   text-align: left;
   color: #000;
   background: transparent;
+  font-family: 'Agenda-bold';
   border: none;
   padding-left: 40px;
   border-radius: 0;
@@ -1084,7 +1086,7 @@ section.nosotros.parallax-1 {
   right: 15px; 
 }
 .custom-accordion .accordion-item .btn-link[aria-expanded="true"] {
-  font-family: 'Agenda';
+  font-family: 'Agenda-bold';
   font-weight: 700;
   color: var(--color-primary-dark) !important;
   background: var(--bg); 
@@ -1109,7 +1111,7 @@ section.nosotros.parallax-1 {
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1); 
 }
 .custom-accordion .accordion-item .accordion-body {
-  font-family: 'Agenda';
+  font-family: 'Agenda-black';
   padding: 20px 20px 20px 20px; 
 }
 
