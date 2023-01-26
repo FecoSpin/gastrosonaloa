@@ -327,9 +327,8 @@ section.nosotros.parallax-1 {
 }
 
 .team-item .team-content {
-  position: absolute;
-  bottom: 10px;
-  width: 407px;
+  bottom: 86px;
+  width: 100%;
   height: auto;
   -webkit-border-bottom-right-radius: 15px;
   -webkit-border-bottom-left-radius: 15px;
@@ -401,19 +400,28 @@ section.nosotros.parallax-1 {
 }
 
 
-@media (max-width: 1280px) {
-  .team-item .team-content {
-    width: 358px;
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+  .team-item .team-content.primero {
+    bottom: 113px;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .team-item .team-content.primero {
+    bottom: 84px;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 767px) {
   .team-item .team-content {
-    width: 337px;
+    bottom: 83px;
+  }
+  .team-item .team-content.primero {
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
   }
 }
 @media (max-width: 375px) {
   .team-item .team-content {
-    width: 350px;
+    bottom: 83px;
   }
 }
 /*--------------------------------------------------------------
@@ -829,6 +837,9 @@ section.nosotros.parallax-1 {
 /*--------------------------------------------------------------
 # Servicios 
 --------------------------------------------------------------*/
+.servicios-small{
+  padding: 50px 0;
+}
 .service-card, .service-card-small {
   height: 140px;
   width: 140px;
@@ -859,6 +870,7 @@ section.nosotros.parallax-1 {
 }
 
 .service-card-small.open {
+  width: 336px;
   transform: translateX(0px) ;
 }
 
