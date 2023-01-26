@@ -787,7 +787,7 @@ section.nosotros.parallax-1 {
   .contacto img{
     display: none;
   }
-  #contact {
+  .contact {
     position: relative;
     margin-left: 0;
     top: 0px;
@@ -799,7 +799,7 @@ section.nosotros.parallax-1 {
 
 @media (max-width: 768px) {
 
-  #contact {
+  .contact {
     position: relative;
     margin-left: 0;
     top: 23px;

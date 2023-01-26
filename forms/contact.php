@@ -8,7 +8,7 @@ if(isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['email']) && 
     $message .= '<p style="color: #080;font-size:18px;">' . $_POST['message'] . '</p>';
     $message .= '<p>Telefono: ' . $phone . '</p>';
     $message .= '</body></html>';
-    $to = "francisco.fcospinoza@gmail.com";
+    $to = "gastro.sinaloa@gmail.com";
     $headers  = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
     $headers .= 'From:' . $from . "\r\n";
