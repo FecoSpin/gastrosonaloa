@@ -488,6 +488,17 @@ section.nosotros.parallax-1 {
     max-width: 40%;
   }
 }
+@media (max-width: 414px) {
+  .Certificaciones img {
+    filter: none;
+    transform: scale(1.5);
+  }
+  .circular-container{
+    width: 200px;
+    height: 200px;
+  }
+  
+}
 @media (max-width: 375px) {
   .circular-container{
     width: 200px;
@@ -535,6 +546,13 @@ section.nosotros.parallax-1 {
   }
   .cta .content p {
     font-size: 18px;
+  }
+  
+}
+
+@media (max-width: 414px) {
+  .cta .container {
+    background: rgba(var(--color-secondary-rgb), 0.1);
   }
   
 }
@@ -981,7 +999,7 @@ section.nosotros.parallax-1 {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .service-card-small {
     height: 210px;
     width: 210px;
