@@ -414,10 +414,6 @@ section.nosotros.parallax-1 {
   .team-item .team-content {
     bottom: 83px;
   }
-  .team-item .team-content.primero {
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-  }
 }
 @media (max-width: 375px) {
   .team-item .team-content {
@@ -801,7 +797,7 @@ section.nosotros.parallax-1 {
   color: var(--color-secondary-light);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .contacto img{
     display: none;
   }
